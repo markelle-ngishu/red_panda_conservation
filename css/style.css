@@ -250,3 +250,206 @@ footer p {
     font-size: 2.5rem;
     width: 100%;
 }
+/* Donation Page Styles */
+.donation-content {
+    padding: 60px 0;
+}
+
+.donation-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.donation-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.donation-card.featured {
+    border: 2px solid var(--primary-color);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.donation-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.donation-card .amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.donation-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.donation-card ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.donation-card ul li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.custom-donation {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.custom-donation h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.custom-donation button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trust-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.partner-orgs {
+    text-align: center;
+}
+
+.partner-orgs h3 {
+    margin-bottom: 30px;
+    color: var(--dark-color);
+}
+
+.orgs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.org-logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.org-logo img {
+    max-height: 100%;
+    max-width: 200px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.org-logo:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 15% auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+

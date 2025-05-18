@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Save the Red Pandas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .demo-notice {
+      background-color: #f8f9fa;
+      border-left: 4px solid #e63946;
+      padding: 15px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .demo-notice i {
+      color: #e63946;
+      font-size: 1.2rem;
+    }
+    .disabled-field {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .payment-demo {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Save the Red Pandas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="conservation.html">Conservation</a></li>
+        <li><a href="donate.html" class="active">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h2>Support Red Panda Conservation</h2>
+  </div>
+</section>
+
+<section class="donation-content">
+  <div class="container">
+    <div class="donation-intro">
+      <p>Your donation helps fund critical conservation efforts to protect red pandas and their habitats.</p>
+    </div>
+
+    <div class="demo-notice">
+      <i class="fas fa-info-circle"></i>
+      <p><strong>DEMO ONLY:</strong> This is a demonstration. No real payments will be processed.</p>
+    </div>
+
+    <div class="donation-options">
+      <div class="donation-card">
+        <h3>Adopt a Red Panda</h3>
+        <p class="amount">$50</p>
+        <ul>
+          <li>Symbolic adoption certificate</li>
+          <li>Red panda plush toy</li>
+          <li>Species information packet</li>
+          <li>Quarterly updates</li>
+        </ul>
+        <button class="btn demo-btn">Donate Now</button>
+      </div>
+      <div class="donation-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <h3>Habitat Protector</h3>
+        <p class="amount">$100</p>
+        <ul>
+          <li>All benefits from $50 level</li>
+          <li>Personalized thank you video</li>
+          <li>Adoption recognition on website</li>
+          <li>Conservation impact report</li>
+        </ul>
+        <button class="btn demo-btn">Donate Now</button>
+      </div>
+      <div class="donation-card">
+        <h3>Conservation Champion</h3>
+        <p class="amount">$250+</p>
+        <ul>
+          <li>All benefits from $100 level</li>
+          <li>Invitation to virtual events</li>
+          <li>Behind-the-scenes updates</li>
+          <li>Personalized conservation plan</li>
+        </ul>
+        <button class="btn demo-btn">Donate Now</button>
+      </div>
+    </div>
+
+    <div class="custom-donation">
+      <h3>Custom Donation</h3>
+      <form id="donation-form">
+        <div class="form-group">
+          <label for="amount">Amount (USD)</label>
+          <input type="number" id="amount" min="1" step="1" required class="disabled-field">
+        </div>
+        <div class="form-group">
+          <label for="frequency">Frequency</label>
+          <select id="frequency" required class="disabled-field">
+            <option value="one-time">One-time donation</option>
+            <option value="monthly">Monthly donation</option>
+            <option value="yearly">Yearly donation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required class="disabled-field">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required class="disabled-field">
+        </div>
+        <div class="payment-demo">
+          <p><i class="fas fa-credit-card"></i> Payment Information (Disabled for Demo)</p>
+        </div>
+        <button type="button" class="btn demo-btn">Submit Donation</button>
+      </form>
+    </div>
+
+    <div class="trust-badges">
+      <div class="trust-item">
+        <i class="fas fa-lock"></i>
+        <p>Secure Payments</p>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-certificate"></i>
+        <p>Tax-Deductible</p>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-chart-pie"></i>
+        <p>85% Goes to Programs</p>
+      </div>
+    </div>
+
+    <div class="partner-orgs">
+      <h3>Real Organizations You Can Support</h3>
+      <div class="orgs-grid">
+        <a href="https://redpandanetwork.org/" target="_blank" class="org-logo">
+          <img src="https://redpandanetwork.org/wp-content/uploads/2020/11/rpn-logo.png" alt="Red Panda Network">
+        </a>
+        <a href="https://www.worldwildlife.org/species/red-panda" target="_blank" class="org-logo">
+          <img src="https://www.worldwildlife.org/assets/images/logo-2020.svg" alt="World Wildlife Fund">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Save the Red Pandas. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div id="demo-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="donation-confirmation">
+      <i class="fas fa-info-circle"></i>
+      <h3>Demo Notice</h3>
+      <p>This is a demonstration. No actual donation was processed.</p>
+      <p>To really help red pandas, please visit one of our partner organizations.</p>
+      <button class="btn close-demo">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('demo-modal');
+    const demoBtns = document.querySelectorAll('.demo-btn');
+    const closeBtn = document.querySelector('.close-modal');
+    const closeDemoBtn = document.querySelector('.close-demo');
+
+    function openModal() {
+      modal.style.display = 'block';
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    demoBtns.forEach(btn => {
+      btn.addEventListener('click', openModal);
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    closeDemoBtn.addEventListener('click', closeModal);
+
+    window.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.getElementById('donation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      openModal();
+    });
+  });
+</script>
+</body>
+</html>
